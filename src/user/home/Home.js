@@ -3,6 +3,11 @@ import MainCategory from "../../components/categories/MainCategory";
 import MainTextInput from "../../components/forms/MainTextInput";
 import TextWithIcon from "../../components/badges/TextWithIcon";
 import MainProduct from "../../components/products/MainProduct";
+import MainReview from "../../components/reviews/MainReview";
+import MainComponent from "../../components/partners/MainComponent";
+import MainButton from "../../components/buttons/MainButton";
+import Footer from "../../components/layouts/Footer";
+import SecondaryButton from "../../components/buttons/SecondaryButton";
 
 const Home = () => {
   return (
@@ -28,15 +33,25 @@ const Home = () => {
             </h1>
             <div className="hidden md:block">
               <div className={"grid grid-cols-2 gap-4 my-8"}>
-                <TextWithIcon mainClass="my-8" imageClass="rounded-full" icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"} label="56+ jasa vidio/foto" />
-                <TextWithIcon mainClass="my-8" imageClass="rounded-full" icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"} label="37+ freelancer di Bali" />
+                <TextWithIcon
+                  mainClass="my-8"
+                  imageClass="rounded-full"
+                  icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                  label="56+ jasa vidio/foto"
+                />
+                <TextWithIcon
+                  mainClass="my-8"
+                  imageClass="rounded-full"
+                  icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                  label="37+ freelancer di Bali"
+                />
               </div>
             </div>
             <div className={"mt-8 md:mt-0"}>
               <h1 className={"font-medium text-md mt-3"}>
                 Cari nama kegiatan atau freelancer
               </h1>
-              <div className="w-11/12">
+              <div className="md:w-11/12 w-full">
                 <MainTextInput />
               </div>
               <h1 className={"font-medium text-xs text-gray-500 mt-3"}>
@@ -45,11 +60,21 @@ const Home = () => {
             </div>
             <div
               className={
-                "md:hidden block grid grid-cols-1 md:grid-cols-2 gap-4 mt-14"
+                "md:hidden grid grid-cols-1 md:grid-cols-2 gap-4 mt-12"
               }
             >
-               <TextWithIcon mainClass="my-8" imageClass="rounded-lg" icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"} label="Jasa" />
-               <TextWithIcon mainClass="my-8" imageClass="rounded-lg" icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"} label="Freelancer" />
+              <TextWithIcon
+                mainClass="my-2"
+                imageClass="rounded-lg"
+                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                label="Jasa"
+              />
+              <TextWithIcon
+                mainClass="my-2"
+                imageClass="rounded-lg"
+                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                label="Freelancer"
+              />
             </div>
           </div>
           <div className={"md:col-span-3 hidden md:block"}>
@@ -76,57 +101,183 @@ const Home = () => {
             <MainCategory />
           </div>
         </div>
-      <div className="grid grid-cols-2 gap-2 my-48 md:mx-24">
-        <div className="md:mr-auto">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-2 md:my-48 my-24 md:mx-24">
+          <div className="md:mr-auto hidden md:block">
+            <div>
+              <div className="absolute">
+                <div className="mt-6 ml-36 ">
+                  <TextWithIcon
+                    mainClass="bg-white p-2 shadow rounded-lg my-2"
+                    imageClass="rounded-lg"
+                    icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                    label="37+ freelancer di Bali"
+                  />
+                </div>
+              </div>
+              <div className="absolute">
+                <div className="ml-48 mt-24">
+                  <TextWithIcon
+                    mainClass="bg-white p-2 shadow rounded-lg my-2"
+                    imageClass="rounded-lg"
+                    icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                    label="56+ jasa vidio/foto"
+                  />
+                </div>
+              </div>
+              <img
+                className="w-4/6 h-72 object-cover"
+                src={
+                  "https://www.exova.id/storage/users/231/products/61f3fafdc983c/1280/1643380250-54.jpg"
+                }
+                alt="Image"
+              />
+            </div>
+          </div>
           <div>
-            <div className="absolute">
-              <div className="mt-6 ml-36 ">
-                <TextWithIcon mainClass="bg-white p-2 shadow rounded-lg my-2" imageClass="rounded-lg" icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"} label="37+ freelancer di Bali" />
-              </div>
+            <h1 className="font-medium text-2xl">
+              Mengapa menggunakan jasa{" "}
+              <span className="text-blue-500"> Exova?</span>
+            </h1>
+            <p className={"font-normal text-md text-gray-500 mt-3"}>
+              Kami akan memberikan yang terbaik dan tidak akan mengecewakan
+              anda.
+            </p>
+            <div className="mt-12 p-2">
+              <TextWithIcon
+                mainClass="my-8"
+                imageClass="rounded-lg"
+                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                label="Mudah mencari vidio/fotografer"
+              />
+              <TextWithIcon
+                mainClass="my-8"
+                imageClass="rounded-lg"
+                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                label="Bebas memilih vidio/fotografer"
+              />
+              <TextWithIcon
+                mainClass="my-8"
+                imageClass="rounded-lg"
+                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                label="Nego harga sesuka hati"
+              />
+              <TextWithIcon
+                mainClass="my-6"
+                imageClass="rounded-lg"
+                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                label="Pembayaran mudah dan praktis"
+              />
             </div>
-            <div className="absolute">
-              <div className="ml-48 mt-24">
-                <TextWithIcon mainClass="bg-white p-2 shadow rounded-lg my-2" imageClass="rounded-lg" icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"} label="56+ jasa vidio/foto" />
-              </div>
+            <div className="bg-blue-500 p-2 w-max rounded-lg">
+              <TextWithIcon
+                textClass="text-white"
+                mainClass="bg-blue-500"
+                imageClass="rounded-lg"
+                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                label="Bisa jual jasa skill vidio/foto kamu!"
+              />
             </div>
-          <img className="w-4/6 h-72 object-cover" src={
-            "https://www.exova.id/storage/users/231/products/61f3fafdc983c/1280/1643380250-54.jpg"
-          }
-          alt="Image" />
           </div>
         </div>
         <div>
-          <h1 className="font-medium text-2xl">Mengapa menggunakan jasa <span className="text-blue-500"> Exova?</span></h1>
-          <p className={"font-normal text-md text-gray-500 mt-3"}>Kami akan memberikan yang terbaik dan tidak akan mengecewakan anda.</p>
-          <div className="mt-12 p-2">
-            <TextWithIcon mainClass="my-8" imageClass="rounded-lg" icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"} label="Mudah mencari vidio/fotografer" />
-            <TextWithIcon mainClass="my-8" imageClass="rounded-lg" icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"} label="Bebas memilih vidio/fotografer" />
-            <TextWithIcon mainClass="my-8" imageClass="rounded-lg" icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"} label="Nego harga sesuka hati" />
-            <TextWithIcon mainClass="my-6" imageClass="rounded-lg" icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"} label="Pembayaran mudah dan praktis" />
+          <div className="md:flex gap-8">
+            <div className="my-auto">
+              <h1 className="font-medium text-2xl">
+                Jelajahi jasa atau freelancer kami
+              </h1>
+            </div>
+            <SecondaryButton label="Lihat semua" />
           </div>
-          <div className="bg-blue-500 p-2 w-max rounded-lg">
-            <TextWithIcon textClass="text-white" mainClass="bg-blue-500" imageClass="rounded-lg" icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"} label="Bisa jual jasa skill vidio/foto kamu!" />
-          </div>
-        </div>
-      </div>
-      <div>
-        <div className="flex gap-8">
-          <div className="my-auto">
-            <h1 className="font-medium text-2xl">Jelajahi jasa atau freelancer kami</h1>
-          </div>
-          <div className="bg-blue-50 duration-500 cursor-pointer hover:bg-blue-100 py-2 px-4 rounded-lg">
-            <span className="font-medium text-base text-blue-500">Lihat semua</span>
+          <div className="grid md:grid-cols-4 grid-cols-2 gap-2 my-4">
+            <MainProduct />
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-2 my-12">
-          <MainProduct />
+        <div className="mt-20">
+          <div className="my-auto text-center">
+            <h1 className="font-medium text-2xl">Apa kata mereka?</h1>
+          </div>
+          <div className="flex overflow-x-auto w-full md:gap-4">
+            <MainReview />
+            <MainReview />
+          </div>
         </div>
-      </div>
-      <div>
-        <div className="my-auto text-center">
-          <h1 className="font-medium text-2xl">Apa kata mereka?</h1>
+        <div className="mt-24">
+          <div className="my-auto text-center">
+            <h1 className="font-medium text-2xl">Support and Partners</h1>
+          </div>
+          <div className="overflow-x-auto mx-auto mt-12">
+            <div className="flex gap-2">
+              <MainComponent
+                image={
+                  "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/original/logo/2020/09/01/7379dfd8-c9cc-4fb9-896f-6374a766cefc-1598927204969-fab786a46eee63c306f89837093520a4.png"
+                }
+              />
+              <MainComponent
+                image={
+                  "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/original/logo/2020/09/01/7379dfd8-c9cc-4fb9-896f-6374a766cefc-1598927204969-fab786a46eee63c306f89837093520a4.png"
+                }
+              />
+            </div>
+          </div>
         </div>
-      </div>
+        <div className="mt-32 md:mx-24">
+          <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20">
+            <div className="hidden md:block">
+              <img
+                className="object-cover w-full h-96"
+                src="https://www.exova.id/storage/users/231/products/61f3fafdc983c/1280/1643380250-54.jpg"
+                alt="Image"
+              />
+            </div>
+            <div>
+              <div>
+                <TextWithIcon
+                  textClass="text-black"
+                  mainClass="my-2"
+                  imageClass="rounded-full"
+                  icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                  label="Punya keahlian dibidang foto/vidio?"
+                />
+                <TextWithIcon
+                  textClass="text-black"
+                  mainClass="my-2"
+                  imageClass="rounded-full"
+                  icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                  label="Bingung nyari klien?"
+                />
+              </div>
+              <div className="mt-8">
+                <h1 className="font-medium text-2xl">
+                  Bergabung bersama <span className="text-blue-500">Exova</span>{" "}
+                  dan jual jasa terbaikmu!
+                </h1>
+                <div className="mt-12">
+                  <MainButton
+                    className="w-max px-4"
+                    label="Daftar menjadi freelancer sekarang"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="mt-48 hidden md:block">
+            <div className="absolute right-48 mt-56 grid grid-cols-2">
+              <div>
+                <span></span>
+              </div>
+              <h1 className="font-medium text-right text-3xl text-white">
+                Dapatkan informasi terbaru dan penawaran spesial dari Kami!
+              </h1>
+            </div>
+            <img
+              className="w-full"
+              src={process.env.PUBLIC_URL + "/banners/banner-footer.png"}
+            />
+          </div>
+        </div>
+        <Footer />
       </div>
     </Layout>
   );
