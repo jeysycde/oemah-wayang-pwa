@@ -1,7 +1,7 @@
 const MainReview = () => {
   return (
     <>
-      <div className="p-4 m-4 w-48 shadow-xl">
+      <div className="p-4 my-8 md:w-72 w-full shadow-xl">
         <div className="flex gap-2">
           <div>
             <img
@@ -26,7 +26,7 @@ const MainReview = () => {
           </div>
         </div>
         <div>
-          <p className="font-light text-sm">
+          <p className="font-base text-sm text-gray-400">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s.
