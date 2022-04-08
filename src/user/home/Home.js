@@ -12,14 +12,14 @@ import SecondaryButton from "../../components/buttons/SecondaryButton";
 const Home = () => {
   return (
     <Layout>
-      <div className={"md:ml-32 mx-4 md:mt-20 mt-4"}>
+      <div className="md:ml-32">
         <div className={"grid grid-cols-1 md:grid-cols-5 md:gap-2"}>
           <div className={"block md:hidden"}>
             <img
               className={"h-full w-full object-cover"}
               alt={"Header Banner"}
               src={
-                "https://www.exova.id/storage/users/231/products/61f3fafdc983c/1280/1643380250-54.jpg"
+                "https://images.unsplash.com/photo-1543257605-7f1c6ed9fe40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
               }
             />
           </div>
@@ -36,13 +36,13 @@ const Home = () => {
                 <TextWithIcon
                   mainClass="my-8"
                   imageClass="rounded-full"
-                  icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                  icon={process.env.PUBLIC_URL + "/icons/cam.png"}
                   label="56+ jasa vidio/foto"
                 />
                 <TextWithIcon
                   mainClass="my-8"
                   imageClass="rounded-full"
-                  icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                  icon={process.env.PUBLIC_URL + "/icons/freelance.png"}
                   label="37+ freelancer di Bali"
                 />
               </div>
@@ -66,13 +66,13 @@ const Home = () => {
               <TextWithIcon
                 mainClass="my-2"
                 imageClass="rounded-lg"
-                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                icon={process.env.PUBLIC_URL + "/icons/cam.png"}
                 label="Jasa"
               />
               <TextWithIcon
                 mainClass="my-2"
                 imageClass="rounded-lg"
-                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                icon={process.env.PUBLIC_URL + "/icons/freelance.png"}
                 label="Freelancer"
               />
             </div>
@@ -82,7 +82,7 @@ const Home = () => {
               className={"h-full object-cover"}
               alt={"Header Banner"}
               src={
-                "https://www.exova.id/storage/users/231/products/61f3fafdc983c/1280/1643380250-54.jpg"
+                "https://images.unsplash.com/photo-1543257605-7f1c6ed9fe40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
               }
             />
           </div>
@@ -109,7 +109,7 @@ const Home = () => {
                   <TextWithIcon
                     mainClass="bg-white p-2 shadow rounded-lg my-2"
                     imageClass="rounded-lg"
-                    icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                    icon={process.env.PUBLIC_URL + "/icons/freelance-blue.png"}
                     label="37+ freelancer di Bali"
                   />
                 </div>
@@ -119,7 +119,7 @@ const Home = () => {
                   <TextWithIcon
                     mainClass="bg-white p-2 shadow rounded-lg my-2"
                     imageClass="rounded-lg"
-                    icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                    icon={process.env.PUBLIC_URL + "/icons/cam-blue.png"}
                     label="56+ jasa vidio/foto"
                   />
                 </div>
@@ -146,25 +146,25 @@ const Home = () => {
               <TextWithIcon
                 mainClass="my-8"
                 imageClass="rounded-lg"
-                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                icon={process.env.PUBLIC_URL + "/icons/mudah.png"}
                 label="Mudah mencari vidio/fotografer"
               />
               <TextWithIcon
                 mainClass="my-8"
                 imageClass="rounded-lg"
-                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                icon={process.env.PUBLIC_URL + "/icons/bebas.png"}
                 label="Bebas memilih vidio/fotografer"
               />
               <TextWithIcon
                 mainClass="my-8"
                 imageClass="rounded-lg"
-                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                icon={process.env.PUBLIC_URL + "/icons/nego.png"}
                 label="Nego harga sesuka hati"
               />
               <TextWithIcon
                 mainClass="my-6"
                 imageClass="rounded-lg"
-                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                icon={process.env.PUBLIC_URL + "/icons/pembayaran.png"}
                 label="Pembayaran mudah dan praktis"
               />
             </div>
@@ -173,7 +173,7 @@ const Home = () => {
                 textClass="text-white"
                 mainClass="bg-blue-500"
                 imageClass="rounded-lg"
-                icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                icon={process.env.PUBLIC_URL + "/icons/bisa.png"}
                 label="Bisa jual jasa skill vidio/foto kamu!"
               />
             </div>
@@ -235,14 +235,14 @@ const Home = () => {
                   textClass="text-black"
                   mainClass="my-2"
                   imageClass="rounded-full"
-                  icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                  icon={process.env.PUBLIC_URL + "/icons/question.png"}
                   label="Punya keahlian dibidang foto/vidio?"
                 />
                 <TextWithIcon
                   textClass="text-black"
                   mainClass="my-2"
                   imageClass="rounded-full"
-                  icon={process.env.PUBLIC_URL + "/icons/icon-bg.png"}
+                  icon={process.env.PUBLIC_URL + "/icons/question.png"}
                   label="Bingung nyari klien?"
                 />
               </div>

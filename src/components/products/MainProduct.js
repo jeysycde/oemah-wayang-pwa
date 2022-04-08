@@ -1,6 +1,7 @@
 import MainButton from "../buttons/MainButton";
-
+import { useHistory } from "react-router-dom";
 const MainProduct = () => {
+  const history = useHistory();
   return (
     <>
       <div>
@@ -24,7 +25,13 @@ const MainProduct = () => {
             </div>
           </div>
           <div className="mt-4">
-            <MainButton className="w-full" label="Lihat detail" />
+            <MainButton
+              onClick={() => {
+                history.push("/products/slug");
+              }}
+              className="w-full"
+              label="Lihat detail"
+            />
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ const Header = () => {
                 alt="user photo"
               />
             </button>
-            <button className={"md:hidden block flex mr-3"}>N</button>
+            <button className={"md:hidden flex mr-3"}>N</button>
             <Dropdown
               dropdown={dropdown}
               className={
@@ -84,7 +84,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  to={"/"}
+                  to={"/products"}
                   className="block py-2 pr-4 pl-3 font-medium text-gray-600 border-b md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >
                   Jasa atau Freelancer
