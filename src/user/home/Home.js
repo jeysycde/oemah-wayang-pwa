@@ -196,17 +196,20 @@ const Home = () => {
           <div className="my-auto text-center">
             <h1 className="font-medium text-2xl">Apa kata mereka?</h1>
           </div>
-          <div className="flex overflow-x-auto w-full md:gap-4">
-            <MainReview />
-            <MainReview />
+          <div className="overflow-x-auto overscroll-contain mt-4">
+            <div className="webkit-inline-box flex grid-cols-2 gap-2">
+              <MainReview />
+              <MainReview />
+              <MainReview />
+            </div>
           </div>
         </div>
         <div className="mt-24">
           <div className="my-auto text-center">
             <h1 className="font-medium text-2xl">Support and Partners</h1>
           </div>
-          <div className="overflow-x-auto mx-auto mt-12">
-            <div className="flex gap-2">
+          <div className="overflow-x-auto overscroll-contain mt-12">
+            <div className="webkit-inline-box flex grid-cols-2 gap-2">
               <MainComponent
                 image={
                   "https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/original/logo/2020/09/01/7379dfd8-c9cc-4fb9-896f-6374a766cefc-1598927204969-fab786a46eee63c306f89837093520a4.png"

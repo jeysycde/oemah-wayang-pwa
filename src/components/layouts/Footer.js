@@ -24,7 +24,7 @@ const Footer = () => {
                   </a>
                 </div>
 
-                <p className="max-w-md mt-6 text-gray-500 font-light">
+                <p className="max-w-md mt-6 text-gray-500 font-base">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s
@@ -39,19 +39,19 @@ const Footer = () => {
                   <h3 className="text-gray-700 font-medium">Layanan kami</h3>
                   <a
                     href="#"
-                    className="block mt-2 text-sm font-light text-gray-600 hover:underline"
+                    className="block mt-2 text-sm font-base text-gray-600 hover:underline"
                   >
                     Kebijakan
                   </a>
                   <a
                     href="#"
-                    className="block mt-2 text-sm font-light text-gray-600 hover:underline"
+                    className="block mt-2 text-sm font-base text-gray-600 hover:underline"
                   >
                     Privasi
                   </a>
                   <a
                     href="#"
-                    className="block mt-2 text-sm font-light text-gray-600 hover:underline"
+                    className="block mt-2 text-sm font-base text-gray-600 hover:underline"
                   >
                     Pertanyaan
                   </a>
@@ -61,25 +61,25 @@ const Footer = () => {
                   <h3 className="text-gray-700 font-medium">Lainnya</h3>
                   <a
                     href="#"
-                    className="block mt-2 text-sm font-light text-gray-600 hover:underline"
+                    className="block mt-2 text-sm font-base text-gray-600 hover:underline"
                   >
                     Tentang kami
                   </a>
                   <a
                     href="#"
-                    className="block mt-2 text-sm font-light text-gray-600 hover:underline"
+                    className="block mt-2 text-sm font-base text-gray-600 hover:underline"
                   >
                     Karir
                   </a>
                   <a
                     href="#"
-                    className="block mt-2 text-sm font-light text-gray-600 hover:underline"
+                    className="block mt-2 text-sm font-base text-gray-600 hover:underline"
                   >
                     Blog
                   </a>
                   <a
                     href="#"
-                    className="block mt-2 text-sm font-light text-gray-600 hover:underline"
+                    className="block mt-2 text-sm font-base text-gray-600 hover:underline"
                   >
                     Unggah karya
                   </a>
@@ -87,10 +87,10 @@ const Footer = () => {
 
                 <div>
                   <h3 className="text-gray-700 font-medium">Hubungi kami</h3>
-                  <span className="block mt-2 text-sm font-light text-gray-600 hover:underline">
+                  <span className="block mt-2 text-sm font-base text-gray-600 hover:underline">
                     exovainonesia@gmail.com
                   </span>
-                  <span className="block mt-2 text-sm font-light text-gray-600 hover:underline">
+                  <span className="block mt-2 text-sm font-base text-gray-600 hover:underline">
                     Denpasar, Bali, Indonesia
                   </span>
 
