@@ -6,7 +6,6 @@ import MainProduct from "../../components/products/MainProduct";
 import MainReview from "../../components/reviews/MainReview";
 import MainComponent from "../../components/partners/MainComponent";
 import MainButton from "../../components/buttons/MainButton";
-import Footer from "../../components/layouts/Footer";
 import SecondaryButton from "../../components/buttons/SecondaryButton";
 
 const Home = () => {
@@ -280,7 +279,6 @@ const Home = () => {
             />
           </div>
         </div>
-        <Footer />
       </div>
     </Layout>
   );

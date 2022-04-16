@@ -4,7 +4,7 @@ const TextWithIcon = (props) => {
       <div className={`flex gap-2 ${props.mainClass}`}>
         <div>
           <img
-            className={`w-12 h-12 ${props.imageClass}`}
+            className={`w-12 h-12 object-cover ${props.imageClass}`}
             src={props.icon}
             alt="Icon"
           />
