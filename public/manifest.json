@@ -1,11 +1,11 @@
 {
-  "short_name": "Exova",
-  "name": "Exova | Take Your Moment and Vacation",
+  "short_name": "Omah Wayang",
+  "name": "Omah Wayang",
   "icons": [
     {
-      "src": "icons/icon-no-bg",
+      "src": "logos/logo",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "72x72"
     }
   ],
   "start_url": ".",
