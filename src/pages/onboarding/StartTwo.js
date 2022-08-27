@@ -11,17 +11,21 @@ const StartTwo = () => {
   return (
     <div>
       <div>
-        <div>
-          <img src={process.env.PUBLIC_URL + "/banners/start-2.png"} alt="/" />
+        <div className={"md:flex md:justify-center"}>
+          <img
+            className={"md:w-1/4"}
+            src={process.env.PUBLIC_URL + "/banners/start-2.png"}
+            alt="/"
+          />
         </div>
-        <div className={"my-4 mx-4 text-left"}>
+        <div className={"my-4 mx-4 text-left md:text-center"}>
           <h1 className={"font-semibold text-2xl"}>Belajar bersama kami</h1>
           <p>
             Menyelenggarakan pendidikan dan pendokumentasian karya seni
             tradisonal
           </p>
         </div>
-        <div className={"m-4 mt-8 text-right"}>
+        <div className={"m-4 mt-8 text-right md:text-center"}>
           <RoundedButton onClick={nextPage} className={"text-xl"}>
             {" "}
             >{" "}

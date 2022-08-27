@@ -7,7 +7,7 @@ const Layout = (props) => {
     <>
       {/*<Header />*/}
       <Toaster position="top-center" reverseOrder={false} />
-      <div className={`${props.className} md:mt-12 mt-4 mx-2`}>
+      <div className={`${props.className} md:mt-12 mt-4 mx-4`}>
         {props.children}
       </div>
       {/*<Footer />*/}
