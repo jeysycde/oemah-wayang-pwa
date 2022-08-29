@@ -1,15 +1,15 @@
-import Header from "../Header";
-import Footer from "./Footer";
 import { Toaster } from "react-hot-toast";
+import BottomNavbar from "../navbars/BottomNavbar";
+import SimpleNavbar from "../navbars/SimpleNavbar";
 
-const Layout = (props) => {
+const Layout = ({ children, className, navbar, title = null }) => {
   return (
     <>
       {/*<Header />*/}
+      {navbar ? <SimpleNavbar title={title} /> : null}
       <Toaster position="top-center" reverseOrder={false} />
-      <div className={`${props.className} md:mt-12 mt-4 mx-4`}>
-        {props.children}
-      </div>
+      <div className={`${className} md:mt-12 mt-4 mx-4`}>{children}</div>
+      <BottomNavbar />
       {/*<Footer />*/}
     </>
   );

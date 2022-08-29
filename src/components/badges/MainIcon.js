@@ -1,4 +1,6 @@
-const MainIcon = ({ children }) => {
-  return <span className={"p-3 bg-gray-100 mx-1 rounded-lg"}>{children}</span>;
+const MainIcon = ({ children, padding = "p-3" }) => {
+  return (
+    <span className={`${padding} bg-gray-100 mx-1 rounded-lg`}>{children}</span>
+  );
 };
 export default MainIcon;

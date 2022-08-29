@@ -1,26 +1,25 @@
 import MainIcon from "../badges/MainIcon";
+import SimpleTitle from "../texts/SimpleTitle";
 
-const SimpleNavbar = () => {
+const SimpleNavbar = ({ title }) => {
   return (
-    <div className={"flex justify-between mt-12"}>
-      <div>
-        <div>
-          <span className={"font-light text-lg"}>Hey there,</span>
-        </div>
-        <div>
-          <h1 className={"font-semibold text-xl"}>Welcome back</h1>
-        </div>
-      </div>
-      <div className={"my-auto"}>
-        <MainIcon>
-          <i className="fa-solid fa-share-nodes"></i>
+    <div className={"flex justify-between mt-8"}>
+      <div className={"ml-4"}>
+        <MainIcon padding={"px-4 py-2"}>
+          <i className="fa-solid fa-angle-left"></i>
         </MainIcon>
-        <MainIcon>
-          <i className="fa-solid fa-moon"></i>
+      </div>
+      <div>
+        <SimpleTitle className={"uppercase"} fontSize={"text-base"}>
+          {title}
+        </SimpleTitle>
+      </div>
+      <div className={"mr-4"}>
+        <MainIcon padding={"px-3 py-2"}>
+          <i className="fa-solid fa-ellipsis"></i>
         </MainIcon>
       </div>
     </div>
   );
 };
-
 export default SimpleNavbar;

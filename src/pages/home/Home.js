@@ -1,9 +1,8 @@
 import Layout from "../../components/layouts/Layout";
-import SimpleNavbar from "../../components/navbars/SimpleNavbar";
+import HomeNavbar from "../../components/navbars/HomeNavbar";
 import SimpleDisplay from "../../components/products/SimpleDisplay";
 import "../../index.css";
 import SimpleCard from "../../components/cards/SimpleCard";
-import MainButton from "../../components/buttons/MainButton";
 import SimpleCalendarCard from "../../components/cards/SimpleCalendarCard";
 import SimpleTitle from "../../components/texts/SimpleTitle";
 import SimpleDisplayNoImage from "../../components/products/SimpleDisplayNoImage";
@@ -12,7 +11,7 @@ import MainReview from "../../components/reviews/MainReview";
 const Home = () => {
   return (
     <Layout>
-      <SimpleNavbar />
+      <HomeNavbar />
       <div aria-label={"content"} className={"mt-4"}>
         <div
           aria-label={"slide-horizontal-content"}
@@ -36,7 +35,6 @@ const Home = () => {
           />
         </div>
         <SimpleCalendarCard />
-
         <div
           aria-label={"images-content"}
           className={"mt-8 grid md:grid-cols-2 grid-cols-1 gap-2"}
