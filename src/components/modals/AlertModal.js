@@ -17,7 +17,7 @@ const dropIn = {
   },
 };
 
-const AlertModal = ({ showModal, handleClose, text, image, button }) => {
+const AlertModal = ({ showModal, handleClose, children, button }) => {
   return (
     <AnimatePresence>
       {showModal && (
@@ -33,18 +33,14 @@ const AlertModal = ({ showModal, handleClose, text, image, button }) => {
             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
               {/*body*/}
               <div className="relative p-6 flex-auto text-center">
-                <img className="w-36 h-36 m-auto" src={image} alt="Icon" />
-                <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
-                  {text}
-                </p>
+                <div>{children}</div>
                 {button && (
                   <div className="mt-8 w-full text-center">
                     <MainButton
                       type="button"
-                      className="w-1/2"
                       disabled={false}
                       onClick={handleClose}
-                      label={"Yaudah si"}
+                      label={"Kembali"}
                     />
                   </div>
                 )}

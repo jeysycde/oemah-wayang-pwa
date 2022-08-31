@@ -1,10 +1,13 @@
 import MainIcon from "../badges/MainIcon";
 import SimpleTitle from "../texts/SimpleTitle";
+import { useHistory } from "react-router-dom";
 
 const SimpleNavbar = ({ title }) => {
+  const history = useHistory();
+
   return (
     <div className={"flex justify-between mt-8"}>
-      <div className={"ml-4"}>
+      <div className={"ml-4"} onClick={() => history.goBack()}>
         <MainIcon padding={"px-4 py-2"}>
           <i className="fa-solid fa-angle-left"></i>
         </MainIcon>

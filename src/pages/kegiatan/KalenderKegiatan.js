@@ -8,22 +8,24 @@ const KalenderKegiatan = () => {
       <div className={"mt-12"} aria-label={"kegiatan terbaru"}>
         <SimpleTitle className={"uppercase"}>Kegiatan Terbaru</SimpleTitle>
       </div>
-      <div>
-        <div className={"my-2"}>
-          <img
-            className={"rounded-3xl h-48"}
-            src={process.env.PUBLIC_URL + "/banners/banner-1.png"}
-            alt=""
-          />
+      <div className={"mt-4"}>
+        <div className={"grid grid-cols-1 md:grid-cols-3 gap-2"}>
+          <div>
+            <img
+              className={"rounded-3xl h-48"}
+              src={process.env.PUBLIC_URL + "/banners/banner-1.png"}
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className={"rounded-3xl h-48"}
+              src={process.env.PUBLIC_URL + "/banners/banner-2.png"}
+              alt=""
+            />
+          </div>
         </div>
-        <div className={"my-2"}>
-          <img
-            className={"rounded-3xl h-48"}
-            src={process.env.PUBLIC_URL + "/banners/banner-2.png"}
-            alt=""
-          />
-        </div>
-        <div className={"mt-12"}>
+        <div className={"mt-12 grid grid-cols-1 md:grid-cols-3 gap-2"}>
           <KegiatanShortcut
             title={"Tari Tradisional Nusantara"}
             location={"Omah Wayang Klaten"}

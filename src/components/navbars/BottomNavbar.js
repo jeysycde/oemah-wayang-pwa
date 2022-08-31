@@ -1,12 +1,14 @@
 import { useHistory } from "react-router-dom";
 
-const BottomNavbar = () => {
+const BottomNavbar = ({ showSidebar }) => {
   const history = useHistory();
   const pathname = window.location.pathname;
 
   const isActive = (params, className = null) => {
     return pathname === params ? (
-      <hr className={`h-2 rounded-full bg-[#92A3FD] ${className}`}></hr>
+      <hr
+        className={`h-2 md:w-14 md:mx-auto rounded-full bg-[#92A3FD] ${className}`}
+      ></hr>
     ) : null;
   };
 
@@ -43,7 +45,7 @@ const BottomNavbar = () => {
         </div>
         <div
           aria-label={"home"}
-          className={"text-center relative ml-1"}
+          className={"text-center md:mx-auto relative ml-1"}
           onClick={() => {
             clickMenu("/home");
           }}
@@ -69,7 +71,13 @@ const BottomNavbar = () => {
           <p className={"mt-1 uppercase text-xs text-gray-400"}>Galeri</p>
           {isActive("/galeri")}
         </div>
-        <div aria-label={"menu"} className={"text-center"}>
+        <div
+          aria-label={"menu"}
+          className={"text-center"}
+          onClick={() => {
+            showSidebar(true);
+          }}
+        >
           <i className={"fa-solid fa-ellipsis text-xl text-gray-400"}></i>
           <p className={"mt-1 uppercase text-xs text-gray-400"}>Menu</p>
           {isActive("/menu")}

@@ -7,8 +7,12 @@ import SimpleCalendarCard from "../../components/cards/SimpleCalendarCard";
 import SimpleTitle from "../../components/texts/SimpleTitle";
 import SimpleDisplayNoImage from "../../components/products/SimpleDisplayNoImage";
 import MainReview from "../../components/reviews/MainReview";
+import { useHistory } from "react-router-dom";
+import SocialIcon from "../../components/socials/SocialIcon";
 
 const Home = () => {
+  const history = useHistory();
+
   return (
     <Layout>
       <HomeNavbar />
@@ -30,7 +34,7 @@ const Home = () => {
             }
             buttonLabel={"View More"}
             onClick={() => {
-              console.log("OK");
+              history.push("/about");
             }}
           />
         </div>
@@ -85,34 +89,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div aria-label={"Kontak"} className={"mt-12 mb-24"}>
-          <div className={"grid grid-cols-2 md:grid-cols-4 gap-2"}>
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/banners/socials/fb.png"}
-                alt="Facebook"
-              />
-            </div>
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/banners/socials/yt.png"}
-                alt="Youtube"
-              />
-            </div>
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/banners/socials/ig.png"}
-                alt="Instagram"
-              />
-            </div>
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/banners/socials/email.png"}
-                alt="Email"
-              />
-            </div>
-          </div>
-        </div>
+        <SocialIcon />
       </div>
     </Layout>
   );

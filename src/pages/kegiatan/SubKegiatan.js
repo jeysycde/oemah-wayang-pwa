@@ -9,14 +9,14 @@ const SubKegiatan = () => {
 
   return (
     <Layout navbar={true}>
-      <div className={"mt-8"}>
+      <div className={"mt-8 text-center"}>
         <img
-          className={"rounded-3xl h-48"}
+          className={"rounded-3xl h-48 mx-auto"}
           src={process.env.PUBLIC_URL + "/banners/banner-1.png"}
           alt=""
         />
       </div>
-      <div className={"mt-4"}>
+      <div className={"mt-4 md:text-center text-left"}>
         <SimpleTitle>Seni Tari Tradisi</SimpleTitle>
         <p className={"mt-2"}>
           Pentas Seni Tari Tradisi akan menghadirkan narasumber Martha Endang W,
