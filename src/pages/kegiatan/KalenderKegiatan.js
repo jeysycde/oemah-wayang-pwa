@@ -1,8 +1,20 @@
 import Layout from "../../components/layouts/Layout";
 import SimpleTitle from "../../components/texts/SimpleTitle";
 import KegiatanShortcut from "./components/KegiatanShortcut";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const KalenderKegiatan = () => {
+  const [kegiatanTerbaru, setKegiatanTerbaru] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://omahwayangklaten.or.id/wp-json/wp/v2/posts/?categories=31")
+      .then((res) => {
+        setKegiatanTerbaru(res.data);
+      });
+  }, []);
+
   return (
     <Layout navbar={true} title={"Kalender Kegiatan"}>
       <div className={"mt-12"} aria-label={"kegiatan terbaru"}>
@@ -10,24 +22,18 @@ const KalenderKegiatan = () => {
       </div>
       <div className={"mt-4"}>
         <div className={"grid grid-cols-1 md:grid-cols-3 gap-2"}>
-          <div>
-            <img
-              className={"rounded-3xl h-48"}
-              src={process.env.PUBLIC_URL + "/banners/banner-1.png"}
-              alt=""
+          {kegiatanTerbaru.map((item, index) => (
+            <div
+              key={index}
+              dangerouslySetInnerHTML={{ __html: item.content.rendered }}
             />
-          </div>
-          <div>
-            <img
-              className={"rounded-3xl h-48"}
-              src={process.env.PUBLIC_URL + "/banners/banner-2.png"}
-              alt=""
-            />
-          </div>
+          ))}
         </div>
-        <div className={"mt-12 grid grid-cols-1 md:grid-cols-3 gap-2"}>
+
+        {/*{content}*/}
+        <div className={"mt-12 mb-32 grid grid-cols-1 md:grid-cols-3 gap-2"}>
           <KegiatanShortcut
-            title={"Tari Tradisional Nusantara"}
+            title={"Seni Tari Tradisi"}
             location={"Omah Wayang Klaten"}
             author={"Omah Wayang Klaten"}
             date={"11:00"}

@@ -9,9 +9,20 @@ import SimpleDisplayNoImage from "../../components/products/SimpleDisplayNoImage
 import MainReview from "../../components/reviews/MainReview";
 import { useHistory } from "react-router-dom";
 import SocialIcon from "../../components/socials/SocialIcon";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Home = () => {
   const history = useHistory();
+  const [kegiatan, setKegiatan] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://omahwayangklaten.or.id/wp-json/wp/v2/posts/?categories=31")
+      .then((res) => {
+        setKegiatan(res.data);
+      });
+  }, []);
 
   return (
     <Layout>
@@ -43,19 +54,13 @@ const Home = () => {
           aria-label={"images-content"}
           className={"mt-8 grid md:grid-cols-2 grid-cols-1 gap-2"}
         >
-          <div className={"my-2"}>
-            <img
-              className={"rounded-3xl"}
-              src={process.env.PUBLIC_URL + "/banners/banner-1.png"}
-              alt=""
-            />
-          </div>
-          <div className={"my-2"}>
-            <img
-              className={"rounded-3xl"}
-              src={process.env.PUBLIC_URL + "/banners/banner-2.png"}
-              alt=""
-            />
+          <div className={"grid grid-cols-1 md:grid-cols-3 gap-2"}>
+            {kegiatan.map((item, index) => (
+              <div
+                key={index}
+                dangerouslySetInnerHTML={{ __html: item.content.rendered }}
+              />
+            ))}
           </div>
         </div>
         <div className={"mt-12"}>

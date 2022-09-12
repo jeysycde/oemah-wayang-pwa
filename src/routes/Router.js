@@ -11,6 +11,7 @@ import Galeri from "../pages/galeri/Galeri";
 import About from "../pages/about/About";
 import Wayang from "../pages/wayang/Wayang";
 import DetailKategoriWayang from "../pages/wayang/DetailKategoriWayang";
+import Diklat from "../pages/jasa/Diklat";
 
 const Router = () => {
   return (
@@ -26,6 +27,7 @@ const Router = () => {
 
       <Route path={"/jasa"} component={ListJasa} exact />
       <Route path={"/jasa/:slug"} component={DetailJasa} exact />
+      <Route path={"/jasa/diklat/detail"} component={Diklat} exact />
 
       <Route path={"/galeri"} component={Galeri} exact />
 
