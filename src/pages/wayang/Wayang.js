@@ -3,9 +3,21 @@ import Layout from "../../components/layouts/Layout";
 import SimpleTitle from "../../components/texts/SimpleTitle";
 import CategoryComponent from "./components/CategoryComponent";
 import BackToHome from "../../components/navbars/BackToHome";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import wayang from "./../../assets/banners/wayang.png";
 
 const Wayang = () => {
   const history = useHistory();
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://omahwayang.herokuapp.com/api/wayang/category/list")
+      .then((response) => {
+        setCategories(response.data.data);
+      });
+  }, []);
 
   return (
     <Layout bottom={false} navbar={true} title={"Wayang"}>
@@ -14,20 +26,22 @@ const Wayang = () => {
         <div className={"mt-4"}>
           <img
             className={"rounded-2xl h-48 w-full object-cover"}
-            src={process.env.PUBLIC_URL + "/banners/example.webp"}
+            src={wayang}
             alt=""
           />
         </div>
         <div className={"mt-12"}>
           <SimpleTitle>Category</SimpleTitle>
-          <CategoryComponent
-            onClick={() => {
-              history.push("/wayang/category");
-            }}
-            image={process.env.PUBLIC_URL + "/banners/punakawan.png"}
-            title={"Punakawan"}
-            description={"Punokawan berarti pula pelayan. "}
-          />
+          {categories.map((item, key) => (
+            <CategoryComponent
+              onClick={() => {
+                history.push(`/wayang/${item.id}`);
+              }}
+              image={item.photo}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
         </div>
       </div>
       <BackToHome />

@@ -4,18 +4,25 @@ import ReactPlayer from "react-player";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import SocialIcon from "../../components/socials/SocialIcon";
-import MainButton from "../../components/buttons/MainButton";
-import { useHistory } from "react-router-dom";
 import BackToHome from "../../components/navbars/BackToHome";
+import pepadi from "../../assets/supports/pepadi.png";
+import dewan from "../../assets/supports/dewan.jpeg";
+import klaten from "../../assets/supports/klaten.png";
+import pkmb from "../../assets/supports/pkbm.jpeg";
+import saving from "../../assets/supports/saving.jpeg";
+import amigo from "../../assets/supports/amigo.png";
+import tel from "../../assets/banners/socials/tel.png";
+
+import piagam1 from "../../assets/penghargaan/1.jpg";
+import piagam2 from "../../assets/penghargaan/2.jpg";
+import piagam3 from "../../assets/penghargaan/3.jpg";
 
 const About = () => {
-  const history = useHistory();
-
   return (
     <Layout bottom={false} navbar={true} title={"About Us"}>
       <div className={"mt-8"}>
         <div className={"rounded-2xl"}>
-          <ReactPlayer width={"100%"} url={"https://youtu.be/uH78GUo2TOs"} />
+          <ReactPlayer width={"100%"} url={"https://youtu.be/BPVqUnVsRlE"} />
         </div>
         <div className={"mt-12 bg-white p-4 shadow-lg rounded-2xl"}>
           <SimpleTitle className={"text-blue-400"} fontSize={"text-xs"}>
@@ -57,18 +64,13 @@ const About = () => {
             showIndicators={false}
           >
             <div className={"mx-2"}>
-              <img
-                className={"rounded-xl"}
-                src={process.env.PUBLIC_URL + "/banners/example.webp"}
-                alt=""
-              />
+              <img className={"rounded-xl"} src={piagam1} alt="" />
             </div>
             <div className={"mx-2"}>
-              <img
-                className={"rounded-xl"}
-                src={process.env.PUBLIC_URL + "/banners/example.webp"}
-                alt=""
-              />
+              <img className={"rounded-xl"} src={piagam2} alt="" />
+            </div>
+            <div className={"mx-2"}>
+              <img className={"rounded-xl"} src={piagam3} alt="" />
             </div>
           </Carousel>
         </div>
@@ -78,14 +80,42 @@ const About = () => {
             <div className={"w-full h-full"}>
               <img
                 className={"w-full h-full rounded-full border object-cover"}
-                src={process.env.PUBLIC_URL + "/banners/example.webp"}
+                src={pepadi}
                 alt=""
               />
             </div>
             <div className={"w-full h-full"}>
               <img
                 className={"rounded-full border object-cover"}
-                src={process.env.PUBLIC_URL + "/banners/example.webp"}
+                src={klaten}
+                alt=""
+              />
+            </div>
+            <div className={"w-full h-full"}>
+              <img
+                className={"rounded-full border object-cover"}
+                src={dewan}
+                alt=""
+              />
+            </div>
+            <div className={"w-full h-full"}>
+              <img
+                className={"rounded-full border object-cover"}
+                src={pkmb}
+                alt=""
+              />
+            </div>
+            <div className={"w-full h-full"}>
+              <img
+                className={"rounded-full border object-cover"}
+                src={saving}
+                alt=""
+              />
+            </div>
+            <div className={"w-full h-full"}>
+              <img
+                className={"rounded-full border object-cover"}
+                src={amigo}
                 alt=""
               />
             </div>
@@ -103,8 +133,14 @@ const About = () => {
             dibalas melalui kontak kami akan segera kami proses
           </p>
           <div>
-            <span>Icon</span>
-            <span className={"font-semibold text-xs"}>See All</span>
+            <span className={"flex gap-2 items-center mt-4"}>
+              <img
+                className={"rounded-full border object-cover w-12 h-12"}
+                src={tel}
+                alt=""
+              />
+              <span className={"font-semibold text-xs"}>+622723350755</span>
+            </span>
           </div>
         </div>
         <SocialIcon />

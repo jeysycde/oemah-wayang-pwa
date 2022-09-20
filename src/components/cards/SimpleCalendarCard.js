@@ -1,5 +1,6 @@
 import MainButton from "../buttons/MainButton";
 import { useHistory } from "react-router-dom";
+import calendar from "../../assets/banners/calendar.png";
 
 const SimpleCalendarCard = () => {
   const history = useHistory();
@@ -23,7 +24,7 @@ const SimpleCalendarCard = () => {
           </div>
         </div>
         <div>
-          <img src={process.env.PUBLIC_URL + "/banners/calendar.png"} alt="" />
+          <img src={calendar} alt="" />
         </div>
       </div>
     </div>

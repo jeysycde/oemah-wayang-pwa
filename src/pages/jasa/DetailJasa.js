@@ -12,11 +12,11 @@ const DetailJasa = () => {
   const getPostId = (slug) => {
     switch (slug) {
       case "fasilitas":
-        return;
+        return 41;
       case "sarana-prasarana":
-        return 34;
+        return 42;
       case "produk-kerajinan":
-        return 34;
+        return 36;
       case "produk-jasa":
         return 34;
       default:

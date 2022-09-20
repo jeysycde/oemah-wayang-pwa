@@ -1,5 +1,6 @@
 import MainIcon from "../../../components/badges/MainIcon";
 import { useHistory } from "react-router-dom";
+import subkegiatan from "../../../assets/banners/subkegiatan.png";
 
 const KegiatanShortcut = ({ title, author, location, date }) => {
   const history = useHistory();
@@ -14,7 +15,7 @@ const KegiatanShortcut = ({ title, author, location, date }) => {
         <div className={"w-20 h-20 my-auto"}>
           <img
             className="w-full h-full object-cover rounded-3xl"
-            src={process.env.PUBLIC_URL + "/banners/example.webp"}
+            src={subkegiatan}
             alt="Images"
           />
         </div>

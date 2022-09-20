@@ -11,6 +11,11 @@ import { useHistory } from "react-router-dom";
 import SocialIcon from "../../components/socials/SocialIcon";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import amigo from "../../assets/testi/amigo.png";
+import mugi from "../../assets/testi/mugi.jpeg";
+import sd from "../../assets/testi/sd.jpeg";
+import sri from "../../assets/testi/sri.jpeg";
+import ukdw from "../../assets/testi/ukdw.jpeg";
 
 const Home = () => {
   const history = useHistory();
@@ -30,11 +35,9 @@ const Home = () => {
       <div aria-label={"content"} className={"mt-4"}>
         <div
           aria-label={"slide-horizontal-content"}
-          className={"overflow-x-scroll whitespace-nowrap md:text-center"}
+          className={"md:text-center"}
         >
           <SimpleDisplay label={"Pelatihan"} />
-          <SimpleDisplay label={"Karya Seni"} />
-          <SimpleDisplay label={"Pelestarian"} />
         </div>
         <div aria-label={"cards"} className={"mt-8"}>
           <SimpleCard
@@ -80,17 +83,40 @@ const Home = () => {
           </div>
           <div className={"overflow-x-scroll flex flex-nowrap mt-4"}>
             <MainReview
+              image={amigo}
               description={
-                "Omah Wayang merupakan tempat pembelajaran bagi pecinta dan  pemerhati budaya "
+                "Omah Wayang merupakan tempat pembelajaran bagi pecinta dan pemerhati budaya jawa serta menyediakan pembelajaran untuk wayang"
               }
-              author={"Amigo Grup "}
+              author={"Amigo Grup"}
             />
-
             <MainReview
+              image={ukdw}
               description={
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                "Pusat pembelajaran seni tradisi Jawa Tengah khususnya daerah Klaten yg bermanfaat untuk kelestarian budaya\n" +
+                "anda dapat belajar kebudayaan"
               }
-              author={"Lorem Ipsum"}
+              author={"UKDW"}
+            />
+            <MainReview
+              image={mugi}
+              description={
+                "Tempat untuk belajar budaya jawa, khususnya wayang dan karawitan. Banyak hal yang dapat disalurkan melalui Omah Wayang ini"
+              }
+              author={"Mugiono Kasido"}
+            />
+            <MainReview
+              image={sri}
+              description={
+                "Kebudayaan memang haruslah dilestarikan. cocok untuk anak anak hingga orang tua yang ingin belajar tentang dunia seni."
+              }
+              author={"Hj. Sri Mulyani"}
+            />
+            <MainReview
+              image={sd}
+              description={
+                "Sangat bagus untuk pembelajaran budaya wayang mulai dari awal sampai perkembangan. Cocok untuk pembelajaran bagi anak SD"
+              }
+              author={"SD Bareng N 1"}
             />
           </div>
         </div>

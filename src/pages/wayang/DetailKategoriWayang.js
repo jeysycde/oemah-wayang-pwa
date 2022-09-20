@@ -4,27 +4,52 @@ import SimpleTitle from "../../components/texts/SimpleTitle";
 import { useParams } from "react-router-dom";
 import MainTextInput from "../../components/forms/MainTextInput";
 import MainButton from "../../components/buttons/MainButton";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const DetailKategoriWayang = () => {
   const { category } = useParams();
+  const [categories, setCategories] = useState([]);
+  const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    axios
+      .get("https://omahwayang.herokuapp.com/api/wayang/" + category)
+      .then((response) => {
+        setCategories(response.data.data);
+      });
+  }, [category]);
+
+  const filteredWayang = categories.filter((wayang) => {
+    return wayang.title.toLowerCase().includes(search.toLowerCase());
+  });
 
   return (
     <Layout navbar={true} bottom={false}>
       <div aria-label={"Search Input"} className={"mt-8 mb-12"}>
         <MainTextInput
+          onChange={(e) => {
+            setSearch(e.target.value);
+          }}
           type={"text"}
           name={"search"}
           placeholder={"Search Nama Wayang"}
         />
       </div>
-      <SimpleTitle>{category}</SimpleTitle>
+      <SimpleTitle>{categories[0]?.category}</SimpleTitle>
       <div className={"grid grid-cols-2 gap-8"}>
-        <div className={"mt-4 p-4 rounded-3xl shadow-lg bg-[#EAF0FF]"}>
-          <img src={process.env.PUBLIC_URL + "/banners/example.webp"} alt="" />
-          <div className={"mt-4 text-center"}>
-            <MainButton className={"w-full"}>Baca</MainButton>
+        {filteredWayang.map((item, key) => (
+          <div
+            key={key}
+            className={"mt-4 p-4 rounded-3xl shadow-lg bg-[#EAF0FF]"}
+          >
+            <img src={item.photo} alt="" />
+            <div className={"mt-4 text-center"}>
+              <div>{item.title}</div>
+              <MainButton className={"w-full"}>Baca</MainButton>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
       <BackToHome />
     </Layout>

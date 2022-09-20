@@ -1,12 +1,12 @@
-const MainReview = ({ description, author }) => {
+const MainReview = ({ description, author, image }) => {
   return (
     <>
-      <div className="p-4 h-32 w-80 rounded-3xl shadow-md mx-1">
+      <div className="p-4 h-42 w-80 rounded-3xl shadow-md mx-1">
         <div className="flex gap-2">
           <div className={"w-48 h-24"}>
             <img
               className="w-full h-full object-cover rounded-3xl"
-              src={process.env.PUBLIC_URL + "/banners/example.webp"}
+              src={image}
               alt="Image"
             />
           </div>
