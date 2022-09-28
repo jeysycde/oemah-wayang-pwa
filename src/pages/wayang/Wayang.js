@@ -13,7 +13,7 @@ const Wayang = () => {
 
   useEffect(() => {
     axios
-      .get("https://omahwayang.herokuapp.com/api/wayang/category/list")
+      .get("https://backend-wayang.herokuapp.com/api/wayang/category/list")
       .then((response) => {
         setCategories(response.data.data);
       });

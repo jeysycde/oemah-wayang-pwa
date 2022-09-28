@@ -12,7 +12,7 @@ const Galeri = () => {
 
   useEffect(() => {
     axios
-      .get("https://omahwayang.herokuapp.com/api/gallery/category/list")
+      .get("https://backend-wayang.herokuapp.com/api/gallery/category/list")
       .then((response) => {
         setData(response.data.data);
       });
@@ -43,7 +43,7 @@ const Galeri = () => {
           </div>
         </Carousel>
       </AlertModal>
-      <div className={"mt-12"}>
+      <div className={"mt-12 mb-24"}>
         <SimpleTitle>Gallery Kegiatan Omah Wayang</SimpleTitle>
         <div className={"mt-4"}>
           {data.map((item, key) => (
@@ -51,9 +51,7 @@ const Galeri = () => {
               <SimpleTitle className={"text-blue-400"} fontSize={"text-xs"}>
                 Kumpulan Foto Kegiatan{" "}
               </SimpleTitle>
-              <SimpleTitle fontSize={"text-sm my-2"}>
-                Gallery Kegiatan Omah Wayang
-              </SimpleTitle>
+              <SimpleTitle fontSize={"text-sm my-2"}>{item.title}</SimpleTitle>
               <div className={"grid grid-cols-3 gap-4"}>
                 {item.galleries.map((item, key) => (
                   <div
