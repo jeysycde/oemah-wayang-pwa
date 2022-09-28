@@ -21,6 +21,35 @@ const Home = () => {
   const history = useHistory();
   const [kegiatan, setKegiatan] = useState([]);
 
+  const DATA = [
+    {
+      name: "Fasilitas",
+      slug: "fasilitas",
+    },
+    {
+      name: "Sarana Prasarana",
+      slug: "sarana-prasarana",
+    },
+    {
+      name: "Produk Kerajinan",
+      slug: "produk-kerajinan",
+    },
+    {
+      name: "Produk Jasa",
+      slug: "produk-jasa",
+    },
+    {
+      name: "Diklat",
+      slug: "diklat",
+    },
+  ];
+
+  const getDetailJasa = (params) => {
+    if (params === "diklat") return history.push("/jasa/diklat/detail");
+
+    return history.push(`/jasa/${params}`);
+  };
+
   useEffect(() => {
     axios
       .get("https://omahwayangklaten.or.id/wp-json/wp/v2/posts/?categories=31")
@@ -71,10 +100,15 @@ const Home = () => {
             <SimpleTitle>Jasa yang kami tawarkan </SimpleTitle>
           </div>
           <div className={"overflow-x-scroll flex flex-nowrap mt-4"}>
-            <SimpleDisplayNoImage>Fasilitas</SimpleDisplayNoImage>
-            <SimpleDisplayNoImage>Sarana Prasarana</SimpleDisplayNoImage>
-            <SimpleDisplayNoImage>Produk Kerajinan</SimpleDisplayNoImage>
-            <SimpleDisplayNoImage>Pelatihan Seni</SimpleDisplayNoImage>
+            {DATA.map((item, key) => (
+              <SimpleDisplayNoImage
+                onClick={() => {
+                  getDetailJasa(item.slug);
+                }}
+              >
+                {item.name}
+              </SimpleDisplayNoImage>
+            ))}
           </div>
         </div>
         <div aria-label={"Testimonial"} className={"mt-12"}>

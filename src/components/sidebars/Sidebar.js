@@ -101,22 +101,6 @@ const Sidebar = ({ handleClose, showSidebar = false }) => {
               </div>
             </li>
           </ul>
-          <div className={"m-4"}>
-            <SimpleTitle className={"text-blue-300"}>Contact</SimpleTitle>
-          </div>
-          <ul className="relative mx-2">
-            <li className="relative grid grid-cols-3 gap-8 items-center">
-              <div>
-                <img src={mail} alt="Mail" />
-              </div>
-              <div>
-                <img src={youtube} alt="Youtube" />
-              </div>
-              <div>
-                <img src={facebook} alt="Facebook" />
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
     )

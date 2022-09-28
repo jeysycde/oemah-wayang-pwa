@@ -2,54 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aeb0606d-9c14-4510-9333-be0b53ee040e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/banners/socials/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/banners/socials/youtube.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banners/banner-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/banners/banner-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banners/banner-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/banners/banner-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banners/calendar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/banners/calendar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banners/example.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/banners/example.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banners/punakawan.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/banners/punakawan.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banners/socials/email.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/banners/socials/email.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banners/socials/fb.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/banners/socials/fb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banners/socials/ig.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/banners/socials/ig.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banners/socials/yt.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/banners/socials/yt.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banners/start-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/banners/start-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banners/start-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/banners/start-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/banners/start-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/banners/start-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/bebas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/bisa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/cam-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/cam.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/freelance-blue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/freelance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/icon-bg-rounded.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/icon-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/icon-no-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/mudah.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/nego.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/pembayaran.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/question.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/cards/SimpleCalendarCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/cards/SimpleCalendarCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/products/SimpleDisplay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/products/SimpleDisplay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/reviews/MainReview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/reviews/MainReview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbars/HomeNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbars/HomeNavbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sidebars/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebars/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/socials/SocialIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/socials/SocialIcon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/texts/SidebarLinkText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/texts/SidebarLinkText.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/about/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/About.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/galeri/Galeri.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/galeri/Galeri.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/jasa/DetailJasa.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/jasa/DetailJasa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/kegiatan/components/KegiatanShortcut.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kegiatan/components/KegiatanShortcut.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/onboarding/StartOne.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/onboarding/StartOne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/onboarding/StartThree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/onboarding/StartThree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/onboarding/StartTwo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/onboarding/StartTwo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/wayang/DetailKategoriWayang.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wayang/DetailKategoriWayang.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/wayang/Wayang.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/wayang/Wayang.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +74,7 @@
       <workItem from="1662426968430" duration="2281000" />
       <workItem from="1662547906305" duration="31340000" />
       <workItem from="1663683468868" duration="6058000" />
+      <workItem from="1664360643048" duration="376000" />
     </task>
     <servers />
   </component>

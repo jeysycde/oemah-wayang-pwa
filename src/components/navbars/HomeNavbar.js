@@ -11,14 +11,7 @@ const HomeNavbar = () => {
           <h1 className={"font-semibold text-xl"}>Welcome back</h1>
         </div>
       </div>
-      <div className={"my-auto"}>
-        <MainIcon>
-          <i className="fa-solid fa-share-nodes"></i>
-        </MainIcon>
-        <MainIcon>
-          <i className="fa-solid fa-moon"></i>
-        </MainIcon>
-      </div>
+      <div className={"my-auto"}></div>
     </div>
   );
 };
