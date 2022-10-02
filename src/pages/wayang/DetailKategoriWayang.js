@@ -14,7 +14,7 @@ const DetailKategoriWayang = () => {
 
   useEffect(() => {
     axios
-      .get("https://omahwayang.herokuapp.com/api/wayang/" + category)
+      .get("https://backend-wayang.herokuapp.com/api/wayang/" + category)
       .then((response) => {
         setCategories(response.data.data);
       });
