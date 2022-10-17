@@ -1,6 +1,11 @@
-const MainIcon = ({ children, padding = "p-3" }) => {
+const MainIcon = ({ children, padding = "p-3", onClick }) => {
   return (
-    <span className={`${padding} bg-gray-100 mx-1 rounded-lg`}>{children}</span>
+    <span
+      onClick={onClick}
+      className={`${padding} bg-gray-100 mx-1 rounded-lg`}
+    >
+      {children}
+    </span>
   );
 };
 export default MainIcon;

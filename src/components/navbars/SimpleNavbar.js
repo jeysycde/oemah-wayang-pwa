@@ -2,7 +2,7 @@ import MainIcon from "../badges/MainIcon";
 import SimpleTitle from "../texts/SimpleTitle";
 import { useHistory } from "react-router-dom";
 
-const SimpleNavbar = ({ title }) => {
+const SimpleNavbar = ({ title, setShowSidebar }) => {
   const history = useHistory();
 
   return (
@@ -18,7 +18,12 @@ const SimpleNavbar = ({ title }) => {
         </SimpleTitle>
       </div>
       <div className={"mr-4"}>
-        <MainIcon padding={"px-3 py-2"}>
+        <MainIcon
+          padding={"px-3 py-2"}
+          onClick={() => {
+            setShowSidebar(true);
+          }}
+        >
           <i className="fa-solid fa-ellipsis"></i>
         </MainIcon>
       </div>

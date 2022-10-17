@@ -22,7 +22,14 @@ const Layout = ({
         }}
         showSidebar={showSidebar}
       />
-      {navbar ? <SimpleNavbar title={title} /> : null}
+      {navbar ? (
+        <SimpleNavbar
+          setShowSidebar={(res) => {
+            setShowSidebar(res);
+          }}
+          title={title}
+        />
+      ) : null}
       <Toaster position="top-center" reverseOrder={false} />
       <div className={`${className} md:mt-12 mt-4 mx-4`}>{children}</div>
       {bottom ? (
