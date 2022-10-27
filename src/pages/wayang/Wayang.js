@@ -21,7 +21,7 @@ const Wayang = () => {
 
   return (
     <Layout bottom={false} navbar={true} title={"Wayang"}>
-      <div className={"mt-8"}>
+      <div className={"mt-8 mb-32"}>
         <SimpleTitle>Wayang Seni Tradisonal Asli Indonesia</SimpleTitle>
         <div className={"mt-4"}>
           <img
